@@ -41,6 +41,44 @@ This repository contains Python scripts developed during the IDX Exchange Data A
 - Created timeline, geographic, and duplicate-identifier validation flags.
 - Saved cleaned datasets and validation summaries locally.
 
+## Additional Progress Through Week 7
+
+### Week 2: Exploratory Data Analysis and Visualizations
+
+- Generated percentile summaries for nine major numeric variables.
+- Created nine combined histogram and boxplot visualizations.
+- Evaluated ClosePrice, ListPrice, OriginalListPrice, LivingArea, LotSizeAcres, BedroomsTotal, BathroomsTotalInteger, DaysOnMarket, and YearBuilt.
+- Calculated IQR outlier counts and percentages.
+- Analyzed average and median sale prices, days on market, sale-to-list-price performance, county-level prices, and inconsistent transaction dates.
+
+### Weeks 4–5: Cleaning and Validation
+
+- Converted required date and numeric fields to consistent data types.
+- Reviewed missing values and removed redundant export columns.
+- Created validation flags for invalid prices, living area, lot size, bedrooms, bathrooms, days on market, and year built.
+- Validated listing, purchase-contract, and closing-date timelines.
+- Checked for missing, zero, positive, and geographically implausible coordinates.
+- Identified missing geographic fields and duplicate listing identifiers.
+- Preserved the original row counts while documenting questionable records with validation flags.
+
+### Week 6: Feature Engineering
+
+- Calculated close-to-list and close-to-original-list-price ratios.
+- Calculated price and list price per square foot.
+- Created year, month, and year-month transaction fields.
+- Calculated listing-to-contract and contract-to-close timelines.
+- Combined available school-district fields.
+- Created grouped summaries by property type, property subtype, county, MLS area, listing office, buyer office, and school district.
+
+### Week 7: Outlier Analysis
+
+- Applied the interquartile range method to ClosePrice, LivingArea, and DaysOnMarket.
+- Created individual and combined outlier flags.
+- Preserved a complete dataset containing all records and outlier flags.
+- Created a separate filtered dataset for analytical comparisons.
+- Compared row counts and median values before and after filtering.
+- Generated three before-and-after distribution visualizations.
+
 ## Data Privacy
 
 CSV files, raw MLS data, processed datasets, and login credentials are not included in this public repository.
